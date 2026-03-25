@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMPERIVM Barbershop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- ESTILOS GENERALES --- */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1a1a1a; /* Fondo oscuro elegante */
+            color: #d4af37; /* Dorado para el texto principal */
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* --- LOGO Y ENCABEZADO --- */
+        header {
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 2px solid #d4af37; /* Línea dorada divisoria */
+        }
+
+        header img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        /* --- SECCIONES PRINCIPALES --- */
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* --- SERVICIOS Y PAQUETES (Estilo Imagen) --- */
+        .servicios-container, .paquetes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .servicio-item, .paquete-item {
+            border: 1px solid #d4af37;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .servicio-item:hover, .paquete-item:hover {
+            transform: scale(1.03); /* Efecto al pasar el mouse */
+        }
+
+        .servicio-item h3, .paquete-item h3 {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            font-size: 28px;
+            font-weight: bold;
+            color: #fff; /* Precio en blanco para resaltar */
+            margin-bottom: 15px;
+        }
+
+        .descripcion {
+            font-weight: 300;
+            font-size: 15px;
+            color: #f1e0ac; /* Dorado pálido para descripciones */
+        }
+
+        /* --- HORARIOS Y UBICACIÓN --- */
+        .info-container {
+            text-align: center;
+        }
+
+        .info-container p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        /* --- SECCIÓN DE POMADAS --- */
+        .pomadas-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+        }
+
+        .pomada-item {
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.5); /* Borde dorado tenue */
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        .pomada-item img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .pomada-item h4 {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .pomada-item p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #f1e0ac;
+        }
+
+        /* --- BOTÓN DE WHATSAPP FLOTANTE --- */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+        }
+
+        .whatsapp-icon {
+            margin-top: 16px;
+        }
+
+        /* --- PIE DE PÁGINA --- */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #111;
+            border-top: 2px solid #d4af37;
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://wa.me/5215532241104" class="whatsapp-float" target="_blank">
+        <i class="fa fa-whatsapp whatsapp-icon"></i> </a>
+
+    <header>
+        <img src="imperivm_logo.png" alt="IMPERIVM Barbershop Logo"> </header>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio-item">
+                <h3>Corte</h3>
+                <div class="precio">$240</div>
+                <p class="descripcion">Lavado inicial y final, asesoría personalizada, peinado y masaje relajante.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Barba</h3>
+                <div class="precio">$220</div>
+                <p class="descripcion">Delineado y recorte de barba bigote con protocolo italiano clásico: toalla caliente y fría, aceite, after shave, cepillado y masaje.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Afeitado</h3>
+                <div class="precio">$240</div>
+                <p class="descripcion">Ritual tradicional con toallas calientes, aceite pre-shave, espuma, afeitado con navaja, toalla fría, after shave y masaje.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Facial</h3>
+                <div class="precio">$160</div>
+                <p class="descripcion">Limpieza profunda con gel espumoso, toalla caliente, mascarilla (carbón activado o colágeno), toalla fría y masaje facial.</p>
+            </div>
+            <div class="servicio-item">
+                <h3>Perfilado</h3>
+                <div class="precio">$120</div>
+                <p class="descripcion">Recorte y limpieza precisa del vello en nariz, orejas y cejas. Detalle absoluto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="paquetes">
+        <h2>Paquetes</h2>
+        <div class="paquetes-container">
+            <div class="paquete-item">
+                <h3>Emperador</h3>
+                <div class="precio">$420</div>
+                <p class="descripcion">Corte de cabello o afeitado + arreglo de barba</p>
+            </div>
+            <div class="paquete-item">
+                <h3>Centurión</h3>
+                <div class="precio">$380</div>
+                <p class="descripcion">Corte de cabello o afeitado + limpieza facial</p>
+            </div>
+            <div class="paquete-item">
+                <h3>Ritual Imperivm</h3>
+                <div class="precio">$550</div>
+                <p class="descripcion">Corte de cabello o afeitado + corte de barba + limpieza facial</p>
+            </div>
+            <div class="paquete-item">
+                <h3>Pretoriano</h3>
+                <div class="precio">$360</div>
+                <p class="descripcion">Arreglo de barba + limpieza facial</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="info">
+        <h2>Horarios y Ubicación</h2>
+        <div class="info-container">
+            <h3>Horarios</h3>
+            <p>Lunes a viernes | 12:00 pm – 9:00 pm</p>
+            <p>Sábado | 11:00 am – 8:00 pm</p>
+            <p>Domingo | 12:00 pm - 6:00 pm</p>
+            
+            <h3>Ubicación</h3>
+            <p>Nueva Zona Comercial Cosmopol Lifestyle</p>
+            <p>1er Piso · Local 3</p>
+        </div>
+    </section>
+
+    <section id="productos">
+        <h2>Sección de Productos</h2>
+        <h3>Pomadas para Cabello</h3>
+        <div class="pomadas-container">
+            <div class="pomada-item">
+                <img src="image_3.png" alt="Pomada Rock Bros Green 150g">
+                <h4>Rock Bros - Green</h4>
+                <p>Hair Grooming Pomade (Verde)<br>Contenido: 150 Ml / 5.07 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="image_4.png" alt="Pomada Rock Bros Purple 150g">
+                <h4>Rock Bros - Purple</h4>
+                <p>Hair Grooming Pomade (Morada)<br>Contenido: 150 Ml / 5.07 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="placeholder_blue.png" alt="Pomada Rock Bros Blue 150g"> <h4>Rock Bros - Blue</h4>
+                <p>Hair Grooming Pomade (Azul)<br>Contenido: 150 Ml / 5.07 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="image_8.png" alt="Pomada Rock Bros Green 50g">
+                <h4>Rock Bros - Green Mini</h4>
+                <p>Hair Grooming Pomade (Verde)<br>Contenido: 50 grs. / 1.69 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="image_6.png" alt="Pomada Rock Bros Purple 50g">
+                <h4>Rock Bros - Purple Mini</h4>
+                <p>Hair Grooming Pomade (Morada)<br>Contenido: 50 grs. / 1.69 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="image_7.png" alt="Pomada Rock Bros Blue 50g">
+                <h4>Rock Bros - Blue Mini</h4>
+                <p>Hair Grooming Pomade (Azul)<br>Contenido: 50 grs. / 1.69 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="image_5.png" alt="Clay Pomade Hair Mate 120g">
+                <h4>Clay Pomade Hair</h4>
+                <p>Pomada Fijación Fuerte para Cabello, Textura Mate<br>Contenido: 120 Grs. / 4.23 Oz</p>
+            </div>
+            <div class="pomada-item">
+                <img src="placeholder_clay.png" alt="Clay Pomade Hair Mate 55g"> <h4>Clay Pomade Hair Mini</h4>
+                <p>Pomada Fijación Fuerte para Cabello, Textura Mate<br>Contenido: 55 Grs.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 IMPERIVM Barbershop. Todos los derechos reservados.</p>
+        <p>CITAS: 55 3224 1104 | Instagram: @IMPERIVM.Barber</p>
+    </footer>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</body>
+</html>
